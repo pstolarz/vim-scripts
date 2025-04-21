@@ -96,6 +96,9 @@
 " To use 'vim -t ', ':tag' and '<C-]>'
 "	set cscopetag
 "
+if has("nvim")
+    finish
+endif
 if exists("loaded_gtags_cscope")
     finish
 endif
